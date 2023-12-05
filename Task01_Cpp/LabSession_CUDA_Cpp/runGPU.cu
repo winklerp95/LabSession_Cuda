@@ -84,12 +84,12 @@ long runGPU(float* h_A, float* h_B, float* h_Result, int numElements) {
     
     checkError(err, "cudaMalloc d_B");
 
-    // Allocate the device output matrix C
+    // Allocate the device output matrix Result
     float* d_Result = NULL;
     // TODO: Allocate matrix Result on cuda device, e.g. err = cudaMalloc(...)
     // Your Code here
     
-    checkError(err, "cudaMalloc d_C");
+    checkError(err, "cudaMalloc d_Result");
 
     // Copy the host input to device memory     
     // TODO: Copy Matrix A from Host to Device e.g. err = cudaMemcpy(...)
