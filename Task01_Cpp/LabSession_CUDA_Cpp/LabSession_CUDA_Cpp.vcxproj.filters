@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="runGPU.cu">
+      <Filter>GPU</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cudaUtils.cu">
+      <Filter>Utils</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="runCPU.cpp">
+      <Filter>CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeTracker.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cudaUtils.cuh">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="runCPU.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="runGPU.cuh">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeTracker.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CPU">
+      <UniqueIdentifier>{89f8c7c6-fc10-43c1-8d2c-7daa93c42280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GPU">
+      <UniqueIdentifier>{88e8f601-0689-4f1d-864c-847eab7e4490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{7b0e4cd6-6e00-42ad-8202-bd48b828d280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{2990892a-8d90-4435-ba51-449408151f4a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
